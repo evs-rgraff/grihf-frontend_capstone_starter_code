@@ -1,3 +1,12 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+a {
+    color: #005eb8;
+}
+
 nav {
     padding: 0.5rem;
     position: fixed;
@@ -12,6 +21,14 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .header-logo-lockup {
     display: flex;
     align-items: center;
@@ -21,12 +38,18 @@ nav {
     height: 90px;
 }
 
+.header-logo-label {
+    font-size: 24px;
+    color: #005eb8;
+    font-weight: 500;
+}
+
 .nav_links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -40,11 +63,13 @@ nav {
     height: 40px;
     background-color: #fff;
     border-radius: 10px;
+    font-size: 1.1rem;
 }
 
 .nav-btn:hover {
     background-color: #005eb8;
     color: #fff;
+    cursor: pointer;
 }
 
 /* Media Queries */
