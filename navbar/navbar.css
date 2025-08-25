@@ -1,5 +1,5 @@
 nav {
-    padding: 1.5rem;
+    padding: 0.5rem;
     position: fixed;
     top: 0%;
     left: 50%;
@@ -9,6 +9,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo-lockup {
@@ -31,4 +32,39 @@ nav {
 
 .nav_links .link {
     padding: 0 1.5rem;
+}
+
+.nav-btn {
+    border: 1px solid #005eb8;
+    min-width: 115px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.nav-btn:hover {
+    background-color: #005eb8;
+    color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav_links {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 999;
+        animation: slideDown 0.5s ease-in-out;
+    }
 }
