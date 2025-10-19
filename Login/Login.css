@@ -12,21 +12,21 @@
     padding: 20px;
 }
 
-.signup-header, .existing-member {
+.login-header {
     text-align: center;
 }
 
-.signup-header {
+.login-header {
     color: #005EB8;
 }
 
-.existing-member {
+.new-member {
     margin-bottom: 20px;
-    color: #2190FF;
+    text-align: center;
 }
 
 /* Grid for form layout */
-.signup-grid {
+.login-grid {
     width: 100%;
     max-width: 400px;
     background-color: #f0f0f0;
@@ -36,7 +36,7 @@
 }
 
 /* Form styling */
-.signup-form form {
+.login-form form {
     display: flex;
     flex-direction: column;
 }
@@ -117,7 +117,7 @@
 
 /* Responsive adjustments */
 @media screen and (max-width: 480px) {
-    .signup-grid {
+    .login-grid {
         padding: 20px;
     }
 
