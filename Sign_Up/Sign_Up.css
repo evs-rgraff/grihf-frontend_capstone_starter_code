@@ -12,6 +12,14 @@
     padding: 20px;
 }
 
+.signup-header, .existing-member {
+    text-align: center;
+}
+
+.signup-header {
+    color: #005EB8;
+}
+
 .existing-member {
     margin-bottom: 20px;
 }
